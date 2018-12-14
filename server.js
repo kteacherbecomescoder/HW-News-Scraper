@@ -13,6 +13,8 @@ mongoose.Promise = Promise;
 
 var PORT = process.env.PORT || 8080;
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news"
+
 var app = express();
 
 app.use(logger("dev"));
@@ -31,7 +33,7 @@ var routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-   mongoose.connect("mongodb:https://git.heroku.com/hw-news-scraper.git");
+   mongoose.connect(MONGOLAB_NAVY_URI);
 
 
 var db = mongoose.connection;
