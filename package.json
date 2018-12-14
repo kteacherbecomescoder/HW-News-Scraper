@@ -1,0 +1,34 @@
+{
+  "name": "hw-news-scraper",
+  "version": "1.0.0",
+  "description": "A News Scraper for the NY Times",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kteacherbecomescoder/HW-News-Scraper.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "handlebars",
+    "mongoose"
+  ],
+  "author": "Eric Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kteacherbecomescoder/HW-News-Scraper/issues"
+  },
+  "homepage": "https://github.com/kteacherbecomescoder/HW-News-Scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.0",
+    "request": "^2.88.0"
+  }
+}
