@@ -33,7 +33,7 @@ var routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-   mongoose.connect(MONGOLAB_NAVY_URI);
+   mongoose.connect(MONGODB_URI);
 
 
 var db = mongoose.connection;
