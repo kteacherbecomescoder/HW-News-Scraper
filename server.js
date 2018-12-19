@@ -12,8 +12,7 @@ var cheerio = require("cheerio");
 mongoose.Promise = Promise;
 
 var PORT = process.env.PORT || 8080;
-
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news"
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news";
 
 var app = express();
 
@@ -33,7 +32,7 @@ var routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-   mongoose.connect(MONGODB_URI);
+mongoose.connect("mongodb:", { useNewUrlParser: true });
 
 
 var db = mongoose.connection;
