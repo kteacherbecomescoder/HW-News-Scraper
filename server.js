@@ -32,7 +32,7 @@ var routes = require("./controllers/scraper_controller.js");
 
 app.use("/", routes);
 
-mongoose.connect("mongodb:", { useNewUrlParser: true });
+mongoose.connect("mongodb:mongodb://heroku_bqsw56ll:heroku_bqsw56ll@ds153785.mlab.com:53785/heroku_bqsw56ll", { useNewUrlParser: true });
 
 
 var db = mongoose.connection;
